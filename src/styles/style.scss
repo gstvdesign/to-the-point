@@ -1,0 +1,88 @@
+@import url("https://use.typekit.net/vrq7gdi.css");
+
+// text
+
+$wide-title: obviously-wide, sans-serif;
+$title: obviously, sans-serif;
+$text:  covik-sans-mono, sans-serif;
+
+// Colors
+
+$vermelho: #d61549;
+$amarelo: #fff3e2;
+$azul: #4497b1;
+
+// Shadow
+
+$outterShadow: 0 0 20px #00000050;
+
+*, html, body {margin: 0; padding: 0;}
+
+body {
+    font-family: $text;
+    font-size: 16px;
+}
+
+.main {
+    display: flex;
+}
+
+sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    background: linear-gradient(145deg, #fffff2, #e6dbcb);
+    box-shadow: inset  20px 20px 60px #d9cfc0, 
+                 -20px -20px 60px #ffffff;
+}
+
+nav{
+    a{
+        padding: 0 1rem; 
+        margin-top: 2rem;
+        color: $azul;
+        text-decoration: none;
+    }
+}
+
+.products, .content {
+    width: calc(50% - 4rem);
+    margin: 0;
+    padding: 2rem;
+    position: absolute;
+    left: 50%;
+}
+
+h1 {
+    font-family: $wide-title;
+}
+
+.brand {
+    
+}
+.brand-logo {
+    width: 100px;
+}
+
+.products-item {
+    background: linear-gradient(145deg, #f6f6f6, #ffffff);
+    border-radius: 2rem;
+    box-shadow: 15px 20px 30px #00000030, 
+                5px 5px 15px #0003;
+    margin-top: 2rem;
+    h1, h2, p {
+        padding: 1rem;
+    }
+    h1{
+        margin-top: 2rem;
+        color: $vermelho;
+        border-top: $vermelho solid 3px;
+    }
+
+}
